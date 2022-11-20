@@ -34,14 +34,19 @@ for y in range(1,11):
         elif x == rx + 1 and y == ry:
             print ("+", end= " ") 
 
-        elif x == 4 and y == 4:
+        
+        elif x == rx + 1 and y == ry - 1:
+            print ("+", end= " ") 
+
+        
+        elif x ==  rx + 1 and y == ry + 1:
             print ("+", end= " ")
-        elif x == 6 and y == 4:
+        
+    
+        elif x ==  rx - 1 and y == ry - 1:
             print ("+", end= " ")
 
-        elif x == 4 and y == 6:
-            print ("+", end= " ")
-        elif x == 6 and y == 6:
+        elif x ==  rx - 1 and y == ry + 1:
             print ("+", end= " ")
 
         else:
